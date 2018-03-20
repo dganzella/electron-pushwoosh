@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
-#import <Pushwoosh/PushNotificationManager.h>
+#import "Pushwoosh.framework/Versions/A/Headers/PushNotificationManager.h"
 
 #include "pushwoosh_notification.h"
 
