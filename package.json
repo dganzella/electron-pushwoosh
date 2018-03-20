@@ -1,0 +1,32 @@
+{
+  "name": "electron-pushwoosh",
+  "version": "0.0.1",
+  "description": "Pushwoosh for Electron JS",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "build": "node-gyp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dganzella/electron-pushwoosh"
+  },
+  "os": [
+    "darwin"
+  ],
+  "keywords": [
+    "pushwoosh",
+    "notifications",
+    "electron"
+  ],
+  "author": "Danilo Ganzella",
+  "devDependencies": {
+    "nan": "^2.3.5",
+    "node-gyp": "^3.4.0"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "event-target-shim": "^1.1.1",
+    "node-uuid": "^1.4.7"
+  }
+}
