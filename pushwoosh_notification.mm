@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
-#import "Pushwoosh.framework/Versions/A/Headers/PushNotificationManager.h"
+//#import "Pushwoosh.framework/Versions/A/Headers/PushNotificationManager.h"
 
 #include "pushwoosh_notification.h"
 
@@ -32,8 +32,8 @@ NAN_METHOD(PushWooshElectron::New) {
 	//center.delegate = pushElec;
 	
 	//[[PushNotificationManager pushManager] handlePushReceived:[[NSApplication sharedApplication] userInfo]];
-	[[PushNotificationManager pushManager] sendAppOpen];
-	[[PushNotificationManager pushManager] registerForPushNotifications];
+	//[[PushNotificationManager pushManager] sendAppOpen];
+	//[[PushNotificationManager pushManager] registerForPushNotifications];
 	
     pushElec->Wrap(info.This());
     info.GetReturnValue().Set(info.This());
