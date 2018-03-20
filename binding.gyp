@@ -2,7 +2,7 @@
   "targets": [{
     "target_name": "PushWooshElectron",
     "sources": [
-      "PushWooshElectron.cc",
+      "PushwooshElectron.cc",
       "pushwoosh_notification.mm"
     ],
     "include_dirs": [
