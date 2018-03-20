@@ -10,7 +10,7 @@
     ],
    "link_settings": {
 	"libraries": [
-	  "./Pushwoosh.framework"
+	  "-framework Pushwoosh"
 	],
   },
     "xcode_settings": {
