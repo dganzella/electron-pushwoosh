@@ -31,11 +31,11 @@ NAN_METHOD(PushWooshElectron::New) {
 	//NSUserNotificationCenter *center = [NSUserNotificationCenter defaultUserNotificationCenter];
 	//center.delegate = pushElec;
 	
-	[[PushNotificationManager pushManager] handlePushReceived:[[NSApplication sharedApplication] userInfo]];
+	//[[PushNotificationManager pushManager] handlePushReceived:[[NSApplication sharedApplication] userInfo]];
 	[[PushNotificationManager pushManager] sendAppOpen];
 	[[PushNotificationManager pushManager] registerForPushNotifications];
 	
-    notification->Wrap(info.This());
+    pushElec->Wrap(info.This());
     info.GetReturnValue().Set(info.This());
   } else {
     const int argc = 1;
